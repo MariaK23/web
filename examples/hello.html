@@ -8,15 +8,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Site</title>
+    <link rel = "stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Заголовок 1 уровня</h1>
         <h2>Заголовок 2 уровня</h2>
     </header>
-    
 
-    <div>
+
+    
+    <div class="content_1">
         <div>
             <h3>Элемент 1. Текст-рыба</h3>
             <p>
@@ -30,23 +32,39 @@
             </p>
         </div>
     </div>
-    <div>
+    <div class="class_1" id="link_to_google">
         <a href="https://google.com" target="_blank">Ссылка на сайт Гугла</a>
     </div>
-    <div>
-        <img src="google.jpg" alt="" 
+
+    <div id="logo_google">
+        <img src="google.jpg" alt="">
     </div>
+
     <div style="border-color: red;">
         <a href="https://google.com" target="_blank">
-            <img src="google.jpg" alt="" 
+            <img src="google.jpg" alt="" >
         </a>
     </div>
-    <style>
-        div{
+    
+    <div class="hello_content">
+        <a href="https://google.com" >
+        <h3>Hello!</h3> 
+        </a>
+        <a href="https://yandex.ru" >
+            <h3>Yandex</h3> 
+        </a>
+    </div>
+    
+<!-- <style> 
+   /*      div{
             border: 2px solid green;
             padding: 10px;
             margin: 5px;
         }
-    </style>
+        /* стили в теге style отменяют стили css файла */
+       /*  .content_1 {
+            border-color: tomato;
+        } */
+    /* </style> */ -->
 </body>
 </html>

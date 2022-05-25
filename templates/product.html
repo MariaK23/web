@@ -1,0 +1,33 @@
+<!-- подключение шаблона -->
+{% extends "index.html" %}
+
+<!-- встраиваемая разметка -->
+{% block main %}
+
+<div class="product-content">
+	<h1>Product page</h1>
+	<form method="post">
+		<!-- поля ввода данных -->
+		<div class="field">
+			<label for="pwd">Пароль:</label>
+			<input type="password" name="password" id="pwd">
+		</div>
+		<div class="field">
+			<label for="salt">Соль:</label>
+			<input type="text" name="salt" id="salt">
+		</div>
+		<div class="field">
+			<label for="n_char">Кол-во символов:</label>
+			<input type="text" name="num_char" id="n_char">
+		</div>
+		<!-- кнопка отправки -->
+		<button type="submit">Отправить</button>
+	</form>
+
+	<!-- ответ сервера -->
+	<div class="response">
+		<h3>{{ message }}</h3>
+	</div>
+</div>
+
+{% endblock %}

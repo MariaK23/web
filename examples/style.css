@@ -1,0 +1,75 @@
+/* универсальный селектор */
+*{
+    margin: 0 0;
+}
+div{
+    border: 2px solid green;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* селектор по тегу (по типу элемента) */
+body {
+    /* 1 значение - все стороны элемента */
+   /* margin: 20px; */
+   /* 2 значения: 1 значение - верхний и нижний, 2 значение - левый и правый, */
+   /* margin: 10px 20px ; */
+   /* 3 знач: 1 значение - верхний 2 - левый и правый 3 знач - нижний 
+   /* margin: 10px 20px 5px; */
+   /* 4 знач - 1 значение - верхний 2 - правый 3 - нижний 4 -левый край*/
+   margin: 5px 10px 20px 30px;
+}
+
+/* селектор по классу */
+.content_1 {
+    border-color: aqua;
+}
+.class_1{
+    background-color: #f0f;
+}
+/* селектор по идинтификатору */
+#link_to_google{
+    border-color: rgb(190, 54, 38);
+}
+
+/* стили для Hello! */
+.hello_content {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+/* селектор дочернего элемента*/
+.hello_content>h3 {
+    color: red;
+    font-size: xx-large;
+}
+
+.hello_content a {
+    text-decoration: none;
+}
+
+/* селектор элемента-потомка */
+.hello_content h3 {
+    display: inline;
+    color: red;
+    font-size: xx-large;
+}
+
+
+/*  псевдокласс для наведения курсора */
+.hello_content h3:hover {
+    color: green;
+}
+
+/* псевдоэлемент */
+.hello_content a::after{
+    content: "|";
+    font-size: xx-large;
+    color: blue;
+}
+
+
+
+
+
+
