@@ -2,7 +2,8 @@ from flask import Flask, render_template, request
 from pwdGenerator import hash_generator
 import db_handler as db
 
-DB_PATH = "data/logs.db"
+#DB_PATH = "data/logs.db"
+DB_PATH = "/home/MariKu/web/data/logs.db"
 
 app = Flask(__name__)
 
